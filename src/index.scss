@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media (max-width: 640px) {
+    .menu-closed{
+        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    }
+    .menu-opened{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+}
