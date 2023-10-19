@@ -12,6 +12,7 @@ export default {
       colors:{
         mb: "#1976d2",
         mbg: "#efefef",
+        snow: "snow",
       },
     },
   },

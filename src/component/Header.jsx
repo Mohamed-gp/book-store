@@ -65,13 +65,13 @@ const Header = () => {
             </Link>
           </div>
         </div>
-        <nav className="bg-red-500 absolute w-48 sm:w-auto h-full top-0 list menu-closed sm:static duration-500">
+        <nav className="bg-mbg z-10 text-gray-500 absolute w-48 sm:w-auto h-full top-0 list menu-closed sm:static duration-500">
           <ul className="flex flex-col sm:flex-row sm:justify-center sm:mt-8 text-left sm:text-center">
-            <li className="hover:bg-black duration-500 h-full pl-4 sm:pl-0 py-4 w-full sm:w-32"><Link to="/home">Home</Link></li>
-            <li className="hover:bg-black duration-500 h-full pl-4 sm:pl-0 py-4 w-full sm:w-32"><Link to="/authors">Authors</Link></li>
-            <li className="hover:bg-black duration-500 h-full pl-4 sm:pl-0 py-4 w-full sm:w-32"><Link to="/about">About Us</Link></li>
-            <li className="hover:bg-black duration-500 h-full pl-4 sm:pl-0 py-4 w-full sm:w-32"><Link to="/contact">Contact Us</Link></li>
-            <li className="hover:bg-black duration-500 h-full pl-4 sm:pl-0 py-4 w-full sm:w-32"><Link to="/register">Register</Link></li>
+            <li className="hover:bg-white font-semibold duration-500 h-full pl-4 sm:pl-0 py-4 w-full sm:w-32"><Link to="/">Home</Link></li>
+            <li className="hover:bg-white font-semibold duration-500 h-full pl-4 sm:pl-0 py-4 w-full sm:w-32"><Link to="/authors">Authors</Link></li>
+            <li className="hover:bg-white font-semibold duration-500 h-full pl-4 sm:pl-0 py-4 w-full sm:w-32"><Link to="/about">About Us</Link></li>
+            <li className="hover:bg-white font-semibold duration-500 h-full pl-4 sm:pl-0 py-4 w-full sm:w-32"><Link to="/contact">Contact Us</Link></li>
+            <li className="hover:bg-white font-semibold duration-500 h-full pl-4 sm:pl-0 py-4 w-full sm:w-32"><Link to="/register">Register</Link></li>
           </ul>
         </nav>
       </header>

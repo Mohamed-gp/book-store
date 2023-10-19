@@ -11,3 +11,17 @@
     }
 
 }
+.slider{
+    width: 300vw;
+    height: calc(100vh - 210px);
+}
+.first-slide-gradient{
+    background-image: linear-gradient(to bottom,rgb(34, 193, 195), rgb(253, 187, 45));
+}
+.second-slide-gradient{
+    background: radial-gradient(circle,#eeaeca 0,#94bbe9 100%);
+}
+.third-slide-gradient{
+    background: linear-gradient(90deg,#833ab4,#fd1d1d 80%,#fcb045);
+}
+
