@@ -29,34 +29,34 @@ const Footer = () => {
             <div className="mb-6">
               <p className="title mb-2 border-b-2 text-2xl font-bold">Usefull Links</p>
               <div className="flex flex-col">
-
-                <Link to="">Home</Link>
-                <Link to="">Authors</Link>
-                <Link to="">Blog</Link>
-                <Link to="">About Us</Link>
-                <Link to="">Contact Us</Link>
+                
+                <Link to="/">Home</Link>
+                <Link to="/authors">Authors</Link>
+                <Link to="/login">Login</Link>
+                <Link to="/register">Register</Link>
+                <Link to="/contactus">Contact Us</Link>
               </div>
             </div>
             <div>
               <p className="title mb-2 border-b-2 text-2xl font-bold">Usefull Links</p>
               <div className="flex flex-col">
-
-                <Link to="">Home</Link>
-                <Link to="">Authors</Link>
-                <Link to="">Blog</Link>
-                <Link to="">About Us</Link>
-                <Link to="">Contact Us</Link>
+                
+                <Link to="/">Home</Link>
+                <Link to="/authors">Authors</Link>
+                <Link to="/login">Login</Link>
+                <Link to="/register">Register</Link>
+                <Link to="/contactus">Contact Us</Link>
               </div>
             </div>
             <div>
               <p className="title mb-2 border-b-2 text-2xl font-bold">Usefull Links</p>
               <div className="flex flex-col">
-
-                <Link to="">Home</Link>
-                <Link to="">Authors</Link>
-                <Link to="">Blog</Link>
-                <Link to="">About Us</Link>
-                <Link to="">Contact Us</Link>
+                
+                <Link to="/">Home</Link>
+                <Link to="/authors">Authors</Link>
+                <Link to="/login">Login</Link>
+                <Link to="/register">Register</Link>
+                <Link to="/contactus">Contact Us</Link>
               </div>
             </div>
           </div>

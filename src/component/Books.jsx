@@ -1,11 +1,13 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faArrowRight, faCartPlus, faEye, faStar, faStarHalf } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Model from "./Model";
-import { document } from "postcss";
+import cartctx from "../context/cartcontext";
+
 
 
 const Books = ({ books, title, number }) => {
+
   const [indexslide, setindexslide] = useState(0)
   const sliding = (direction) => {
     if (direction == "toLeft") {
@@ -19,11 +21,13 @@ const Books = ({ books, title, number }) => {
   }
   //modal
   const [openmodel, setopenmodel] = useState(false)
-  const [bookdata,setbookdata] = useState(null)
+  const [bookdata, setbookdata] = useState(null)
   const viewmodel = (data) => {
     setopenmodel(!openmodel)
     setbookdata(data)
   }
+
+  const {cartitems , addtocart , removefromcart} = useContext(cartctx)
   return (
     <>
       <div className="container" >
@@ -63,7 +67,7 @@ const Books = ({ books, title, number }) => {
                 <p className="text-red-500 font-bold text-lg">${e.price}</p>
                 <div className="view-and-cart flex gap-2 items-center text-gray-500 font-bold text-xl my-2">
                   <FontAwesomeIcon icon={faEye} className="cursor-pointer" onClick={() => viewmodel(e)} />
-                  <FontAwesomeIcon icon={faCartPlus} className="cursor-pointer" />
+                  <FontAwesomeIcon icon={faCartPlus} className="cursor-pointer"  onClick={() => {addtocart({...e,quantity: 1})}}/>
                 </div>
               </div>
             );
@@ -71,7 +75,7 @@ const Books = ({ books, title, number }) => {
           {indexslide >= 1 ? <FontAwesomeIcon onClick={() => { sliding("toLeft") }} icon={faArrowLeft} className="text-white left-arrow-books bg-red-400 text-3xl absolute left-10 w-12 md:-left-6 h-12 rounded-full p-1 cursor-pointer top-1/2 -translate-y-1/2" /> : <></>}
           {indexslide < books.length - 3 ? <FontAwesomeIcon onClick={() => { sliding("toRight") }} icon={faArrowRight} className="text-white right-arrow-books bg-red-400 text-3xl absolute w-12 right-10 md:-right-6 h-12 rounded-full p-1 cursor-pointer top-1/2 -translate-y-1/2" /> : <></>}
         </div>
-        {openmodel ? <Model openmodel={openmodel} setopenmodel={setopenmodel} bookdata={bookdata} setbookdata={setbookdata}/> : null}
+        {openmodel ? <Model openmodel={openmodel} setopenmodel={setopenmodel} bookdata={bookdata} setbookdata={setbookdata} /> : null}
       </div>
 
     </>
