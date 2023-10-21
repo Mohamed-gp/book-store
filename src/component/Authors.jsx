@@ -20,7 +20,7 @@ const Authors = () => {
 
                         <div className="author w-72 rounded-lg p-5 flex flex-col items-center gap-2 border-2 border-black" key={data.id}>
                             <div className="img w-64 h-36 overflow-hidden bg-white ">
-                                <img src={`/public/assets/${data.image}`} alt="" className="w-full h-full rounded-lg" />
+                                <img src={`/assets/${data.image}`} alt="" className="w-full h-full rounded-lg" />
                             </div>
                             <p className="font-bold text-xl">{data.name}</p>
                         </div>

@@ -30,7 +30,7 @@ const Cart = () => {
                                     <>
                                         <div className="flex gap-2 relative items-center flex-1" >
                                             <div className="img w-40">
-                                                <img src={`/public/assets/books/${item.image}`} alt="book" />
+                                                <img src={`/assets/books/${item.image}`} alt="book" />
                                             </div>
                                             <div className="flex justify-between flex-1">
                                                 <div className="flex flex-col gap-2 font-bold">

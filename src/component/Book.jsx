@@ -17,7 +17,7 @@ const Book = () => {
     
       <div className="container my-5 flex gap-10 flex-wrap px-4">
         <div className="bg-white p-10">
-          <img src={`/public/assets/books/${book.image}`} alt={book.id} />
+          <img src={`/assets/books/${book.image}`} alt={book.id} />
         </div>
         <div className="flex flex-col">
           <p className="font-bold  mb-4 text-2xl">{book.title}</p>

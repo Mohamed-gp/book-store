@@ -48,7 +48,7 @@ const Books = ({ books, title, number }) => {
                 key={e.id}
               >
                 <div className="img w-48 overflow-hidden" style={{ height: "300px" }}>
-                  <img src={`/public/assets/books/${e.image}`} alt={e.id} />
+                  <img src={`/assets/books/${e.image}`} alt={e.id} />
                 </div>
                 <p className="font-bold h-10 text-sm  flex items-center">{e.title}</p>
                 <div className="flex gap-2 ">

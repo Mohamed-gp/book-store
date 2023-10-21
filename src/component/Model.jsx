@@ -21,7 +21,7 @@ const Model = ({ openmodel, setopenmodel, bookdata, setbookdata }) => {
       <div className="model-container z-50 bg-[#00000061] fixed left-0 top-0 w-screen h-screen flex justify-center items-center" onClick={hideview}>
         <div className="w-10/12 h-5/6 gap-4 justify-center bg-white rounded-lg model relative container px-4 flex items-center">
           <div className="img w-48">
-            <img src={`/public/assets/books/${bookdata.image}`} alt="" />
+            <img src={`/assets/books/${bookdata.image}`} alt="" />
           </div>
           <div className="flex-1 flex flex-col gap-2">
             <p className="title font-bold text-3xl">{bookdata.title}</p>

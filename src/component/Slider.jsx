@@ -18,7 +18,7 @@ const Slider = () => {
       <div className="flex slider relative duration-1000" style={{transform: `translateX(${currentslide * -100}vw)`}}>
         <div className="flex w-screen md:text-left text-center md:flex-row flex-col justify-center md:justify-evenly  relative  items-center first-slide-gradient py-4">
           <div className="w-40 lg:w-72">
-            <img src="/public/assets/bookspng/book1.png" alt="book-one-png" />
+            <img src="/assets/bookspng/book1.png" alt="book-one-png" />
           </div>
           <div className="flex flex-col justify-center gap-y-1">
             <p className="text-lg lg:text-5xl font-bold">Book Store</p>
@@ -34,7 +34,7 @@ const Slider = () => {
         </div>
         <div className="flex  w-screen md:text-left text-center md:flex-row flex-col justify-center md:justify-evenly relative  items-center second-slide-gradient py-4">
           <div className="w-40 lg:w-72">
-            <img src="/public/assets/bookspng/book2.png" alt="book-one-png" />
+            <img src="/assets/bookspng/book2.png" alt="book-one-png" />
           </div>
           <div className="flex flex-col justify-center gap-y-1">
             <p className="text-lg lg:text-5xl font-bold">The Books For Everyone</p>
@@ -55,7 +55,7 @@ const Slider = () => {
         </div>
         <div className="flex w-screen md:text-left text-center md:flex-row flex-col justify-center md:justify-evenly relative third-slide-gradient bg-green-500  items-center py-4">
           <div className="w-40 lg:w-72">
-            <img src="/public/assets/bookspng/book3.png" alt="book-one-png" />
+            <img src="/assets/bookspng/book3.png" alt="book-one-png" />
           </div>
           <div className="flex flex-col justify-center gap-y-1">
             <p className="text-lg lg:text-5xl font-bold">Check Out The New Titles</p>
